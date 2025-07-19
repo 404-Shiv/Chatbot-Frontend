@@ -1,8 +1,20 @@
+import React from 'react';
+
 function Navbar() {
   return (
-    <nav style={{ backgroundColor: '#181510', padding: '1rem', color: '#e9dbbd', display: 'flex', justifyContent: 'space-between' }}>
-      <span>CyberSec RAG Chatbot</span>
-      <span>Home | About</span>
+    <nav style={{
+      display: 'flex',
+      justifyContent: 'space-around',
+      padding: '1rem',
+      background: 'rgba(0, 255, 204, 0.05)',
+      color: '#e9dbbd',
+      fontFamily: 'Orbitron, sans-serif',
+      fontSize: '1rem',
+      borderBottom: '1px solid rgba(0,255,204,0.2)'
+    }}>
+      <a href="#" style={{ color: '#00ffcc', textDecoration: 'none' }}>Home</a>
+      <a href="#" style={{ color: '#00ffcc', textDecoration: 'none' }}>About</a>
+      <a href="#" style={{ color: '#00ffcc', textDecoration: 'none' }}>Feedback</a>
     </nav>
   );
 }
